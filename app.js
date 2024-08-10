@@ -37,7 +37,7 @@ function gameFlash(btn) {
 function levelUp() {
     userSeq = [];
     level++;
-    h2.innerText =`Lavel ${level}`;
+    h2.innerText =`Level ${level}`;
     
     let randIdx = Math.floor(Math.random() *4);
     let randColor = btns[randIdx];
