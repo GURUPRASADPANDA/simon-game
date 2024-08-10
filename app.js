@@ -6,14 +6,18 @@ let level = 0;
 let btns = ["yellow","red","purple","green"];
 let h2 = document.querySelector("h2");
 
-document.addEventListener("keypress",function () {
+let c = 0;
+document.addEventListener("click",function () {
    if(started == false)
    {
-    console.log("game started");
     started = true;
    }
-
-   levelUp();
+   
+   if(c==0){
+      levelUp();
+   }
+   c++;
+   
 })
 
 function gameFlash(btn) {
@@ -53,7 +57,7 @@ function checkAns(idx) {
     h2.innerHTML=`Game Over! Your score was <b>${level}<b><br> press any key to restart`;
     document.querySelector("body").style.backgroundColor = "red";
     setTimeout( function() {
-        document.querySelector("body").style.backgroundColor = "white";
+        document.querySelector("body").style.backgroundColor = "bisque";
     },150 );
     reset();
  }
