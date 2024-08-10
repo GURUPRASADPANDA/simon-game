@@ -38,3 +38,16 @@ body{
 }
 
 
+@media (max-width: 600px) {
+    .btn {
+        height: 150px;
+        width: 150px;
+        border-radius: 15%;
+        margin: 0.6rem;
+        border-radius: 20%;
+        border: 5px solid black;
+    }
+    footer{
+        margin-top: 20%;
+    }
+}
